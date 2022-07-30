@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-counter {
+  width: 750px;
+  background-color: #00D7FF;
+  border-radius: 20px;
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.time-counter .menu {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  transition: 0.3s;
+}
+.time-counter .menu .date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.time-counter .menu .date h1 {
+  text-align: center;
+  cursor: default;
+}
+.time-counter .menu .date .inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.time-counter .menu .date .inputs .input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.time-counter .menu .date .inputs .input h2 {
+  cursor: default;
+}
+.time-counter .menu .date .inputs .input input {
+  color: #333;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  width: 45px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+}
+.time-counter .menu .date .inputs .input #date-yy {
+  width: 80px;
+}
+.time-counter .menu .options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.time-counter .menu .options h1 {
+  cursor: default;
+}
+.time-counter .menu .options .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.time-counter .menu .options .buttons button {
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  color: #333;
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.time-counter .menu .options .buttons button:hover {
+  transform: scale(1.1);
+  color: #fff;
+  background-color: #333;
+}
+.time-counter .menu.active {
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+}
+.time-counter .result {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+.time-counter .result h1 {
+  cursor: default;
+}
+.time-counter .result #counted {
+  cursor: default;
+  text-align: center;
+}
+.time-counter .result button {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  color: #333;
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.time-counter .result button:hover {
+  transform: scale(1.1);
+  color: #fff;
+  background-color: #333;
+}
+.time-counter .result.active {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+  transition: 0.3s;
+}/*# sourceMappingURL=style.css.map */
